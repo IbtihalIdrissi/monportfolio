@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="background-elements">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">Portfo<span>lio</span></h1>
+            <ul class="nav-links">
+                <li><a href="#" data-target="home" class="active">Accueil</a></li>
+                <li><a href="#" data-target="about">À propos</a></li>
+                <li><a href="#" data-target="projects">Projets</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <!-- VUE ACCUEIL -->
+        <section id="home" class="page active">
+            <div class="hero-container">
+                <div class="hero-text">
+                    <h2>Bonjour, je suis Ibtihal</h2>
+                    <h1 class="gradient-text">Développeuse Passionnée</h1>
+                    <p>Bienvenue sur mon portfolio interactif. Découvrez mon parcours, mes compétences et mes
+                        réalisations.</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary"
+                            onclick="document.querySelector('[data-target=\'projects\']').click()">Voir mes
+                            projets</button>
+                        <button class="btn btn-outline"
+                            onclick="document.querySelector('[data-target=\'about\']').click()">En savoir plus</button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="photo.jpeg" alt="Photo de Ibtihal" id="profile-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- VUE À PROPOS -->
+        <section id="about" class="page">
+            <div class="section-container glass-panel">
+                <h2 class="section-title">À Propos <span class="gradient-text">de Moi</span></h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Passionné par les technologies du web et la création d'expériences utilisateur uniques, j'ai
+                            développé une solide expertise dans le développement d'applications modernes.</p>
+                        <p>Mon objectif est de créer des produits à la fois beaux et performants, qui répondent aux
+                            besoins des utilisateurs tout en offrant des performances irréprochables.</p>
+
+                        <div class="skills-section">
+                            <h3>Mes Compétences</h3>
+                            <div class="skills-tags">
+                                <span class="tag"><i class="fa-brands fa-html5" style="color: #E34F26;"></i>
+                                    HTML5</span>
+                                <span class="tag"><i class="fa-brands fa-css3-alt" style="color: #1572B6;"></i>
+                                    CSS3</span>
+                                <span class="tag"><i class="fa-brands fa-js" style="color: #F7DF1E;"></i>
+                                    JavaScript</span>
+                                <span class="tag"><i class="fa-brands fa-php" style="color: #777BB4;"></i> PHP</span>
+                                <span class="tag"><i class="fa-brands fa-react" style="color: #61DAFB;"></i>
+                                    React</span>
+                                <span class="tag"><i class="fa-solid fa-paintbrush" style="color: #8d6e63;"></i> UI/UX
+                                    Design</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-details">
+                        <ul class="info-list">
+                            <li><i class="fa-solid fa-user"></i> <strong>Nom:</strong> Ibtihal Idrissi Noumzil</li>
+                            <li><i class="fa-solid fa-envelope"></i> <strong>Email:</strong> idrissiibtihal01@email.com
+                            </li>
+                            <li><i class="fa-solid fa-location-dot"></i> <strong>Localisation:</strong> Agadir,Maroc
+                            </li>
+                            <li><i class="fa-solid fa-briefcase"></i> <strong>Disponibilité:</strong> Ouvert aux
+                                opportunités</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- VUE PROJETS -->
+        <section id="projects" class="page">
+            <div class="section-container">
+                <h2 class="section-title">Mes <span class="gradient-text">Projets</span></h2>
+                <div class="projects-grid">
+                    <!-- Projet 1 -->
+                    <div class="project-card glass-panel">
+                        <div class="project-img-placeholder"
+                            style="background-image: url('https://image.thum.io/get/width/600/crop/800/https://ibtihalidrissi.github.io/Glam-glowy/'); background-size: cover; background-position: top; color: transparent;">
+                            Projet 1</div>
+                        <div class="project-info">
+                            <h3>Glam & Glow</h3>
+                            <p>Site e-commerce élégant dédié à la vente de trousses de maquillage, avec un design
+                                féminin et épuré.</p>
+                            <a href="https://ibtihalidrissi.github.io/Glam-glowy/" target="_blank"
+                                class="btn btn-small">Visiter le site <i class="fa-solid fa-arrow-up-right-from-square"
+                                    style="font-size: 0.8rem; margin-left: 5px;"></i></a>
+                        </div>
+                    </div>
+                    <!-- Projet 2 -->
+                    <div class="project-card glass-panel">
+                        <div class="project-img-placeholder">Projet 2</div>
+                        <div class="project-info">
+                            <h3>Nom du Projet 2</h3>
+                            <p>Une courte description de ce projet. Vous pourrez envoyer les vrais détails et images
+                                plus tard.</p>
+                            <a href="#" class="btn btn-small">Voir plus</a>
+                        </div>
+                    </div>
+                    <!-- Projet 3 -->
+                    <div class="project-card glass-panel">
+                        <div class="project-img-placeholder">Projet 3</div>
+                        <div class="project-info">
+                            <h3>Nom du Projet 3</h3>
+                            <p>Une courte description de ce projet. Vous pourrez envoyer les vrais détails et images
+                                plus tard.</p>
+                            <a href="#" class="btn btn-small">Voir plus</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
